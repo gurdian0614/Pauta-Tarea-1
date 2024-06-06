@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pauta_Tarea_1.MainPage">
+
+    <ContentPage Title="Area del cuadrado">
+        <VerticalStackLayout Spacing="10" Padding="40">
+            <Label Text="Ingrese el valor del lado (cm):" />
+            <Entry x:Name="txtLado" Keyboard="Numeric" />
+            <Label Text="Resultado:" />
+            <Entry x:Name="txtResultado" IsReadOnly="True" />
+
+            <Button x:Name="btnCalcular" Text="Calcular" Background="Green" Clicked="btnCalcular_Clicked" />
+            <Button x:Name="btnLimpiar" Text="Limpiar" Background="Red" Clicked="btnLimpiar_Clicked" />
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Area del círculo">
+        <VerticalStackLayout Spacing="10" Padding="40">
+            <Label Text="Ingrese el valor del radio (cm):" />
+            <Entry x:Name="txtRadio" Keyboard="Numeric" />
+            <Label Text="Resultado:" />
+            <Entry x:Name="txtResultadoAC" IsReadOnly="True" />
+
+            <Button x:Name="btnCalcularAC" Text="Calcular" Background="Green" Clicked="btnCalcularAC_Clicked" />
+            <Button x:Name="btnLimpiarAC" Text="Limpiar" Background="Red" Clicked="btnLimpiarAC_Clicked" />
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Area del rectángulo">
+        <VerticalStackLayout Spacing="10" Padding="40">
+            <Label Text="Ingrese el valor de la base (cm):" />
+            <Entry x:Name="txtBase" Keyboard="Numeric" />
+            <Label Text="Ingrese el valor de la altura (cm):" />
+            <Entry x:Name="txtAltura" Keyboard="Numeric" />
+            <Label Text="Resultado:" />
+            <Entry x:Name="txtResultadoAR" IsReadOnly="True" />
+
+            <Button x:Name="btnCalcularAR" Text="Calcular" Background="Green" Clicked="btnCalcularAR_Clicked" />
+            <Button x:Name="btnLimpiarAR" Text="Limpiar" Background="Red" Clicked="btnLimpiarAR_Clicked" />
+        </VerticalStackLayout>
+    </ContentPage>
+
+</TabbedPage>
